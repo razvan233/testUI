@@ -1,0 +1,115 @@
+$base-color: #b0101c;
+header {
+  font-family: "Montserrat", sans-serif;
+  min-height: 10vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  $big_font: calc(0.390625vw * 6);
+  $small_font: calc(0.390625vw * 3);
+  $_10px: 0.390625vw;
+  margin-top: 20px;
+  .details {
+    height: 100%;
+    flex: 3;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: start;
+    .flag {
+      height: calc(#{$_10px} * 5);
+      width: calc(#{$_10px} * 5);
+      background-image: url("assets/DE-flag.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 $_10px 0 $_10px;
+    }
+    .team-name,
+    .team-number,
+    .full-name,
+    .inside-line {
+      font-size: $big_font;
+      font-style: "Montserrat";
+      font-weight: 900;
+      color: #b0101c;
+      text-transform: uppercase;
+      margin: 0 $_10px 0 $_10px;
+    }
+    .team-name {
+      margin: 0 $_10px 0 0;
+    }
+    .full-name {
+      font-weight: 300;
+    }
+    .inside-line {
+      margin: 0;
+      font-weight: 300;
+    }
+  }
+  .social-media {
+    display: grid;
+
+    align-items: center;
+    justify-content: end;
+    justify-self: end;
+    position: relative !important;
+    .yt,
+    .instr,
+    .fb {
+      height: 15px;
+      width: 15px;
+      margin: 0 10px 0 10px;
+      cursor: pointer;
+      z-index: 1;
+      flex-wrap: wrap;
+    }
+    .fb {
+      grid-row: 1/2;
+      background-image: url("assets/facebook.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .instr {
+      grid-row: 1/2;
+      background-image: url("assets/instagram.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .yt {
+      grid-row: 1/2;
+      background-image: url("assets/youtube.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .share {
+      grid-row: 1/2;
+      background-image: url("assets/share2.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .share {
+      height: 45px;
+      width: 45px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .square {
+      position: absolute !important;
+      right: 10% !important;
+      z-index: -100;
+      width: 140px;
+      height: 35px;
+      border: 1.5px solid $base-color;
+      background: #fff;
+      border-bottom-left-radius: 100px;
+      border-top-left-radius: 100px;
+    }
+  }
+}
